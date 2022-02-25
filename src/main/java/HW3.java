@@ -6,19 +6,18 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
-public class JavaFXTemplate extends Application {
+public class HW3 extends Application {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		launch(args);
 	}
 
 	//feel free to remove the starter code from this method
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-		// TODO Auto-generated method stub
 		primaryStage.setTitle("Geo Gonzalez Homework 3");
 
 		Button b1 = new Button("button 1");
@@ -50,6 +49,9 @@ public class JavaFXTemplate extends Application {
 		});
 				
 		Scene scene = new Scene(bPane, 700,700);
+		//Custom Color
+		Color darkColor = Color.web("0x202124");
+		scene.setFill(darkColor);
 		primaryStage.setScene(scene);
 		primaryStage.show();
 	}
